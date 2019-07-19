@@ -33,9 +33,9 @@
 
 		<dict>
 			<key>begin</key>
-			<string>^/\*</string>
+			<string>^\s*/\*</string>
 			<key>end</key>
-			<string>^\*/</string>
+			<string>^\s*\*/</string>
 			<key>name</key>
 			<string>comment.block.ahk</string>
 		</dict>
@@ -150,7 +150,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\s*(#)((?i:includeagain|include))\s+(.*?)\s*(;.*)?$</string>
+			<string>^\s*(#)((?i:includeagain|include)),?\s+(.*?)\s*(;.*)?$</string>
 			<key>name</key>
 			<string>importline.ahk</string>
 		</dict>
